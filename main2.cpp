@@ -24,6 +24,7 @@ int main() {
     }
     catch(std::fstream::failure& ex){
         cout << "File can`t be opened or red or written" << endl;
+        cout << ex.what() << endl;
     }
     return 0;
  }
